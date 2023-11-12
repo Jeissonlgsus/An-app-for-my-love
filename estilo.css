@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./imagenes/fondo.jfif);
+    background-size: cover;
+}
+#seleccionarPersonaje {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo {
+    color: white ;
+    font-size: 75px;
+    font-weight: bold;
+    height: 0px;
+    font-family: 'Lilita One', cursive;
+    text-shadow: 2px 4px 10px black;
+}
+.subtitulo{
+    color: aquamarine;
+    font-size: 40px;
+}
+.tarjetas{
+    display: flex;
+    gap: 10px;
+}
+input {
+    display: none;
+}
+input:checked + label {
+    background-color: rgb(29, 185, 185);
+}
+.tarjetaPersonaje {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background: teal;
+}
+.tarjetaPersonaje:hover{
+    border-color: blanchedalmond;
+}
+p{
+    color: white;
+    font-size: 40px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+.tarjetaPersonaje img{
+    width: 180px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#botonPersonaje {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+}
+#botonPersonaje:hover{
+    border-color: black;
+}
+/*---------------------------Advertencia----------------------*/
+#advertencia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.letreroAdvertencia {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border: 3px solid white;
+    margin-top: 200px;
+}
+#botonAdvertencia {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+}
+#botonAdvertencia:hover{
+    border-color: black;
+}
+/*----------------------------------Alan-----------------------*/
+#personalidadAlan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.paginaAlan{
+    display: flex;
+}
+.leftAlan,.centerAlan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textoAlan {
+    color: white;
+    border: 2px solid white;
+    font-size: 30px;
+    width: 350px;
+    background: rgba(127, 253, 220, 0.5);
+    margin: 20px;
+    text-shadow: 2px 4px 10px black;
+}
+#personalidadAlan img {
+    width: 350px;
+    border-radius: 20px;
+}
+.tituloAlan,.tituloSikki,.tituloEric{
+    color: white;
+    font-family: 'Lilita One', cursive;
+    font-size: 100px;
+    border-radius: 10px;
+    width: 250px;
+    text-shadow: 2px 4px 10px black;
+}
+.poemaAlan{
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 500px;
+    margin: 20px;
+}
+.imagenesAlan img{
+    width: 270px;
+}
+/*----------------------------Sikki----------------------------*/
+#personalidadSikki{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.paginaSikki{
+    display: flex;
+    align-items: center;
+
+}
+.supLeftSikki{
+    color:white;
+    border: 2px solid white;
+    width: 500px;
+    height: 560px;
+    border-radius: 20px;
+    margin: 20px;
+    font-size: 30px;
+    border: 2px solid white;
+    background: rgba(0, 0, 0, 0.5);
+}
+.centerSikki{
+    color:white;
+    width: 209px;
+    height: 520px;
+    border-radius: 20px;
+    margin: 20px
+}
+.imgSikkiUp,.imgSikkiDw{
+    height: 250px;
+    border-radius: 20px;
+}
+.centerSikki audio{
+    width: 213px;
+}
+.rightSikki{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.supRightSikki{
+    color:white;
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+.supRightSikki img{
+    height: 200px;
+    width: 250px;
+    border-radius: 20px;
+}
+.infRightSikki{
+    color:white;
+    border: 2px solid white;
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    margin: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+/*----------------------------Eric-------------------*/
+#personalidadEric{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.paginaEric{
+    display: flex;
+}
+.leftEric{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.supLeftEric{
+    color:white;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 20px;
+    
+}
+.supLeftEric img{
+    width: 300px;
+    border-radius: 20px;
+}
+.cenLeftEric{
+    color:white;
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    margin: 20px;   
+}
+.cenLeftEric img{
+    width: 300px;
+}
+.infLeftEric{
+    color:white;
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    margin: 20px;
+    
+}
+.centerEric{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.supCenEric{
+    color:white;
+    width: 300px;
+    height: 230px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.supCenEric img{
+    width: 300px;
+}
+.cenCenEric{
+    color:white;
+    width: 300px;
+    height: 0px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.infCenEric{
+    color:white;
+    width: 300px;
+    height: 325px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.infCenEric img{
+    width: 300px;
+}
+.rightEric{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.supRightEric{
+    color:white;
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.cenRightEric{
+    color:white;
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.infRightEric{
+    color:white;
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    margin: 20px;
+}
+/*----------------------------Reiniciar-------------------------*/
+#sectionReiniciar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#reiniciar{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+#reiniciar:hover{   
+    border-color: black;
+}
+/*-----------------------------Android------------------------------*/
+@media (max-width: 980px) {
+    .titulo{
+        height: 35px;
+        text-align: center;
+    }
+    .subtitulo{
+        height: 40px;
+    }
+    .tarjetas{
+        flex-direction: column;
+
+    }
+    .tarjetaPersonaje{
+        width: 540px;
+        height: 540px;
+        border-radius: 70px;
+    }
+    p{
+        font-size: 70px;
+    }
+    .tarjetaPersonaje img{
+        width: 530px;
+    }
+    #botonPersonaje,#reiniciar{
+        width: 200px;
+        height: 100px;
+        font-size: 50px;
+        border-radius: 40px;
+    }
+/*-----------------------------Advertencia----------------------------------*/
+    .letreroAdvertencia{
+        font-size: 90px;
+        width: 900px;
+        height: 1760px;
+        text-align: center;
+    }
+    #botonAdvertencia{
+        width: 200px;
+        height: 100px;
+        font-size: 30px;
+        border-radius: 40px;
+    }
+/*-----------------------------Alan-------------------------------------------*/
+    #personalidadAlan,.paginaAlan{
+        flex-direction: column;
+        align-items: center;
+    }
+    #personalidadAlan img{
+        width: 900px
+    }
+    .textoAlan,.poemaAlan{
+        font-size: 60px;
+        width: 900px;
+        text-align: center;
+    }
+    audio{
+        width: 500px;
+        height: 80px;
+    }
+    /*---------------------------Sikki-----------------------------------*/
+    .paginaSikki{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .supLeftSikki{
+        width: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 50px;
+        text-align: center;
+        height: 800px;
+    }
+    .centerSikki{
+        width: 900px;
+        height: 2220px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imgSikkiUp {
+        height: 1125px;
+    }
+    .imgSikkiDw {
+        width: 900px;
+        height: 900px;
+    }
+    .centerSikki audio {
+        width: 500px;
+        height: 100px;
+        margin: 40px;
+    }
+    .rightSikki{
+        height: 1800px;
+        width: 900px;
+        align-items: center;
+        justify-content: flex-start;
+        
+    }
+    .supRightSikki{
+        width: 900px;
+        height: 1000px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .supRightSikki img {
+        width: 800px;
+        height: 550px;
+    }
+    .infRightSikki{
+        width: 900px;
+        height: 720px;
+        font-size: 40px;
+        border: 3px solid white;  
+    }
+    /*--------------------------------Eric----------------------------------*/
+    .paginaEric{
+        flex-direction: column;
+        height: 4000px;
+        
+    }
+    .leftEric{
+        justify-content: flex-start;
+        height: 1350px;
+    }
+    .supLeftEric,.cenLeftEric{
+        width: 800px;
+        height: 500px;
+        align-items: center;
+    }
+    .supLeftEric img,.cenLeftEric img{
+        width: 800px;
+    }
+    .infLeftEric{
+        height: 200px;
+    }
+    .supCenEric{
+        width: 800px;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cenCenEric{
+        width: 800px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .infCenEric{
+        width: 800px;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .supCenEric img{
+        width: 550px;
+    }
+    .infCenEric img{
+        width: 500px;
+    }
+    .rightEric {
+        width: 900px;
+        height: 1500px;
+    }
+    .supRightEric{
+        border: 3px solid white;
+        height: 1420px;
+        width: 800px;
+        font-size: 40px;
+    }
+
+
+    /*-----------------------------Reiniciar------------------------------*/
+    #sectionReiniciar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
